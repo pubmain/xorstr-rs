@@ -11,3 +11,4 @@ syn = "2.0.104"
 
 [lib]
 crate-type = ["procmacro"]
+proc-macro = true
