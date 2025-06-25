@@ -10,4 +10,4 @@ rand = "0.9.1"
 syn = "2.0.104"
 
 [lib]
-crate-type = ["procmacro"]
+crate-type = ["proc-macro"]
