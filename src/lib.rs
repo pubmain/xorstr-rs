@@ -2,7 +2,7 @@ extern crate proc_macro;
 
 use proc_macro::TokenStream;
 use quote::quote;
-use rand::{Rng, thread_rng};
+use rand::Rng;
 use syn::{LitStr, parse::Parse, parse::ParseStream, parse_macro_input};
 
 struct Args {
