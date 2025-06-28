@@ -37,7 +37,7 @@ pub fn xorstr(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
             let decrypted = data.iter().enumerate()
                 .map(|(i, b)| (b ^ key[i % key.len()]))
                 .collect::<Vec<u8>>();
-            String::from_utf8(decrypted).unwrap()
+            String::from_utf8(decrypted).unwrap().leak()
         }
     }
     .into()
